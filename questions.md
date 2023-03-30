@@ -196,5 +196,18 @@ class TaskController extends Controller
 {{ form_end(form) }}
 
 ```
-12. In Git there is lot's of changes in you pr and now you are free to merge it - how will you do it?
-13. Git what does git --ammend
+12. The purpose?
+```
+
+$container
+    ->register('my.listener.with_high_priority', MyHighPriorityListener::class)
+    ->addTag('doctrine.event_listener', ['event' => 'postPersist', 'priority' => 10])
+;
+
+$container
+    ->register('my.listener.with_low_priority', MyLowPriorityListener::class)
+    ->addTag('doctrine.event_listener', ['event' => 'postPersist', 'priority' => 1])
+;
+```
+13. In Git there is lot's of changes in you pr and now you are free to merge it - how will you do it?
+14. Git what does git --ammend
