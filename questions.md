@@ -10,6 +10,7 @@
 
 6. how to optimize:
 ```
+<?php
 namespace Acme\SuperbAppBundle\Entity;
 
 use Symfony\Component\DependencyInjection\Container; 
@@ -84,8 +85,9 @@ function save(){
 ```
 9. What is Serializer in Symfony?
 10. How many cache adapters are present in Symfony?
-11. Fix me:
+11. Pull request:
 ```
+<?php
 class Task
 {
     protected $description;
