@@ -8,9 +8,16 @@
 
 5. there is entities authors, books, categories. author may write several books, the book can belong to several categories;
 
-how will look database
+5.1 how will look database
 
-select authors Tom and Mike, their books and the categories of the books
+5.2 select authors Tom and Mike, their books and the categories of the books
 
-how will you hold the data result in the php?
+5.3 how will you hold the data result in the php?
+
+6. How else can we run this query. We do it with php. 
+```
+SELECT * FROM books 
+INNER JOIN categories ON books.id = category.book_id 
+INNER JOIN authors on books.author_id = authors.id;  
+```
    
