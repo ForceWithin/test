@@ -1,11 +1,14 @@
 <?php 
 class CarController extends AbstractController
 {
+    private $cars;
+    public function __contruct() {
+        $this->cars = $entityManager->getRepository(Car::class)->findAll();
+    }
 
     public function getCarByName($name) {
-      $cars = $entityManager->getRepository(Car::class)->findAll();
 
-      foreach($cars as $car) {
+      foreach($this->cars as $car) {
         if ($car->getName() == $name) {
             return $car;
          }
@@ -15,9 +18,8 @@ class CarController extends AbstractController
     }
 
     public function getCarByEngine($engine) {
-      $cars = $entityManager->getRepository(Car::class)->findAll();
-
-      foreach($cars as $car) {
+    
+      foreach($this->cars as $car) {
         if ($car->getEngine() == $engine) {
             return $car;
          }
@@ -27,9 +29,8 @@ class CarController extends AbstractController
     }
 
     public function getCarByColor($color) {
-      $cars = $entityManager->getRepository(Car::class)->findAll();
-
-      foreach($cars as $car) {
+     
+      foreach($this->cars as $car) {
         if ($car->getColor() == $color) {
             return $car;
          }
