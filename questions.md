@@ -83,9 +83,9 @@ function save(){
 
 }
 ```
-9. What is Serializer in Symfony?
-10. How many cache adapters are present in Symfony?
-11. Pull request:
+7. What is Serializer in Symfony?
+8. How many cache adapters are present in Symfony?
+9. Pull request:
 ```
 <?php
 class Task
@@ -199,7 +199,7 @@ class TaskController extends Controller
 
 ```
 
-12. The purpose?
+10. The purpose?
 ```
 
 $container
@@ -212,5 +212,5 @@ $container
     ->addTag('doctrine.event_listener', ['event' => 'postPersist', 'priority' => 1])
 ;
 ```
-13. In Git there is lot's of changes in you pr and now you are free to merge it - how will you do it?
-14. Git what does git --ammend
+11. In Git there is lot's of changes in you pr and now you are free to merge it - how will you do it?
+12. Git what does git --ammend
