@@ -8,7 +8,7 @@
 
 5. If Symfony DQL for example says that DATEDIFF function if missing what will you do?
 
-6. how to optimize:
+6. Pull request:
 ```
 <?php
 namespace Acme\SuperbAppBundle\Entity;
@@ -198,6 +198,7 @@ class TaskController extends Controller
 {{ form_end(form) }}
 
 ```
+
 12. The purpose?
 ```
 
